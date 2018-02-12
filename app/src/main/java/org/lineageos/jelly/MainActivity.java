@@ -215,7 +215,7 @@ public class MainActivity extends WebViewExtActivity implements
         mWebView.setDesktopMode(desktopMode);
         mWebView.loadUrl(url == null ? PrefsUtils.getHomePage(this) : url);
 		
-		AdBlocker.init(this)
+		AdBlocker.init(this);
 
         mHasThemeColorSupport = WebViewCompat.isThemeColorSupported(mWebView);
 
