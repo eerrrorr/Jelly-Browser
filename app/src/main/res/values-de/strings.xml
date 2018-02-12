@@ -160,4 +160,6 @@
   <string name="suggestions_provider_none">Keiner</string>
   <!-- Search in page: search hint -->
   <string name="search_bar_hint">Suchen</string>
+  <!-- Settings: adblocker title -->
+  <string name="pref_adblocker_title">Werbung blockieren</string>
 </resources>

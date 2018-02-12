@@ -86,6 +86,7 @@ import org.lineageos.jelly.utils.UiUtils;
 import org.lineageos.jelly.webview.WebViewCompat;
 import org.lineageos.jelly.webview.WebViewExt;
 import org.lineageos.jelly.webview.WebViewExtActivity;
+import org.lineageos.jelly.utils.AdBlocker;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -213,6 +214,8 @@ public class MainActivity extends WebViewExtActivity implements
         mWebView.init(this, urlBarController, mLoadingProgress, mIncognito);
         mWebView.setDesktopMode(desktopMode);
         mWebView.loadUrl(url == null ? PrefsUtils.getHomePage(this) : url);
+		
+		AdBlocker.init(this)
 
         mHasThemeColorSupport = WebViewCompat.isThemeColorSupported(mWebView);
 
