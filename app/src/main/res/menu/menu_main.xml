@@ -16,6 +16,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/menu_reload"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/menu_reload"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/menu_new"
         android:icon="@drawable/ic_new_tab"
         android:title="@string/menu_new_tab"
@@ -24,11 +29,6 @@
         android:id="@+id/menu_incognito"
         android:icon="@drawable/ic_incognito"
         android:title="@string/menu_incognito"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/menu_reload"
-        android:icon="@drawable/ic_refresh"
-        android:title="@string/menu_reload"
         app:showAsAction="never" />
     <item
         android:id="@+id/menu_add_favorite"
