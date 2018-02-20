@@ -42,19 +42,17 @@ import android.widget.TextView;
 import org.lineageos.jelly.IntentFilterCompat;
 import org.lineageos.jelly.MainActivity;
 import org.lineageos.jelly.R;
+import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.AdBlocker;
 import org.lineageos.jelly.utils.PrefsUtils;
-import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.UrlUtils;
-
-import java.util.HashMap;
-import java.util.Map;
-
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 
 class WebClient extends WebViewClient {
