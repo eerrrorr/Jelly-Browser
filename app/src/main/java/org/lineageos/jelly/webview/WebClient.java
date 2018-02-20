@@ -42,9 +42,9 @@ import android.widget.TextView;
 import org.lineageos.jelly.IntentFilterCompat;
 import org.lineageos.jelly.MainActivity;
 import org.lineageos.jelly.R;
+import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.AdBlocker;
 import org.lineageos.jelly.utils.PrefsUtils;
-import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.UrlUtils;
 
 import java.net.URISyntaxException;
