@@ -15,31 +15,39 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ListPreference
-        android:defaultValue="@string/default_search_engine"
-        android:entries="@array/pref_search_engine_entries"
-        android:entryValues="@array/pref_search_engine_entryvalues"
-        android:key="key_search_engine"
-        android:summary="%s"
-        android:title="@string/pref_search_engine" />
+    <PreferenceCategory android:title="@string/pref_general">
 
-    <ListPreference
-        android:defaultValue="@string/default_suggestion_provider"
-        android:entries="@array/pref_suggestions_provider_entries"
-        android:entryValues="@array/pref_suggestions_provider_entryvalues"
-        android:key="key_suggestion_provider"
-        android:summary="%s"
-        android:title="@string/pref_suggestions_provider" />
+        <ListPreference
+            android:defaultValue="@string/default_search_engine"
+            android:entries="@array/pref_search_engine_entries"
+            android:entryValues="@array/pref_search_engine_entryvalues"
+            android:key="key_search_engine"
+            android:summary="%s"
+            android:title="@string/pref_search_engine" />
 
-    <Preference
-        android:key="key_home_page"
-        android:title="@string/pref_start_page" />
+        <ListPreference
+            android:defaultValue="@string/default_suggestion_provider"
+            android:entries="@array/pref_suggestions_provider_entries"
+            android:entryValues="@array/pref_suggestions_provider_entryvalues"
+            android:key="key_suggestion_provider"
+            android:summary="%s"
+            android:title="@string/pref_suggestions_provider" />
 
-    <SwitchPreference
-        android:defaultValue="0"
-        android:key="key_advanced_share"
-        android:summary="@string/pref_screenshot_snap_summary"
-        android:title="@string/pref_screenshot_snap_title" />
+        <Preference
+            android:key="key_home_page"
+            android:title="@string/pref_start_page" />
+
+        <SwitchPreference
+            android:defaultValue="0"
+            android:key="key_adblocker"
+            android:title="@string/pref_adblocker_title" />
+
+        <SwitchPreference
+            android:defaultValue="0"
+            android:key="key_advanced_share"
+            android:summary="@string/pref_screenshot_snap_summary"
+            android:title="@string/pref_screenshot_snap_title" />			
+    </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/pref_privacy_security">
 
